@@ -33,6 +33,7 @@ func checkLatency() {
 	defer file.Close()
 
 	fmt.Fprintf(file, "%s Latency: %dms\n", timestamp, latency)
+	fmt.Printf("%s Latency: %dms\n", timestamp, latency)
 }
 
 func main() {
